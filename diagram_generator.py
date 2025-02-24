@@ -8,7 +8,7 @@ import os
 
 # Get API key from environment variable
 
-API_KEY = "add your API key here"
+API_KEY = os.getenv("OPENAI_API_KEY")
 def generate_diagram(description, diagram_type):
     """
     Generate Mermaid diagram code from text description using AI
