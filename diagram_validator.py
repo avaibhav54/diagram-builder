@@ -8,7 +8,7 @@ import os
 # load_dotenv()
 
 # Get API key from environment variable
-API_KEY = "add your API key here"
+API_KEY = os.getenv("OPENAI_API_KEY")
 def validate_diagram(mermaid_code):
     """
     Validate the generated Mermaid code
